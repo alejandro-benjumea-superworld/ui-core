@@ -1,7 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { FC, ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 
-import { ThemeProvider } from '../src/providers/ThemeProvider';
+import { ThemeProvider } from '../providers/ThemeProvider';
 
 const AllTheProviders: FC = ({ children }: any) => {
   return <ThemeProvider>{children}</ThemeProvider>;

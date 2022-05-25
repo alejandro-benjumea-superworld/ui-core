@@ -1,5 +1,5 @@
 {
-  "name": "alejandro/ui-core",
+  "name": "ui-core-test",
   "version": "0.0.2",
   "description": "Superworld components library",
   "main": "dist/index.js",

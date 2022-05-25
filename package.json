@@ -1,5 +1,5 @@
 {
-  "name": "ui-core-test",
+  "name": "ui-core-superworldapp-test",
   "version": "0.0.3",
   "description": "Superworld components library",
   "main": "dist/index.js",

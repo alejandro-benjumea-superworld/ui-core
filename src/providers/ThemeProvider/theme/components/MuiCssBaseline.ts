@@ -13,7 +13,7 @@ export const MuiCssBaseline: Components<Theme>['MuiCssBaseline'] = {
     body: {
       height: '100%',
       lineHeight: '1.2',
-      backgroundColor: palette.byName.alabaster3,
+      backgroundColor: palette.byName.porcelain,
       '&::-webkit-scrollbar, & *::-webkit-scrollbar': {
         width: '5px',
         height: '5px',
@@ -22,7 +22,7 @@ export const MuiCssBaseline: Components<Theme>['MuiCssBaseline'] = {
         backgroundColor: palette.common.white,
       },
       '&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb': {
-        backgroundColor: palette.byName.grey,
+        backgroundColor: palette.byName.darkGrey,
         borderRadius: '5px',
       },
       '&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover': {

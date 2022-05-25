@@ -11,7 +11,7 @@ export const MuiSlider: Components<Theme>['MuiSlider'] = {
     }),
     track: ({ theme }) => ({
       height: 4,
-      background: theme.palette.gradient.blue1,
+      background: theme.palette.gradient.theme,
       border: 'none',
     }),
     thumb: ({ theme }) => ({
@@ -19,10 +19,10 @@ export const MuiSlider: Components<Theme>['MuiSlider'] = {
       height: 12,
       border: `1px solid ${theme.palette.common.white}`,
       '&[data-index="0"]': {
-        background: theme.palette.byName.pictonBlue,
+        background: theme.palette.byName.arctic,
       },
       '&[data-index="1"]': {
-        background: theme.palette.byName.persianBlue,
+        background: theme.palette.byName.royalBlue,
       },
     }),
   },

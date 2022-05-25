@@ -6,17 +6,17 @@ export const MuiOutlinedInput: Components<Theme>['MuiOutlinedInput'] = {
       borderRadius: 0,
       '&:not(.Mui-error)&:hover': {
         '& fieldset': {
-          borderColor: `${theme.palette.byName.cadetBlue} !important`,
+          borderColor: `${theme.palette.byName.frost} !important`,
         },
       },
     }),
     input: ({ theme }) => ({
       '&::placeholder': {
-        color: theme.palette.byName.deepSapphire,
+        color: theme.palette.byName.navy,
       },
     }),
     notchedOutline: ({ theme }) => ({
-      borderColor: theme.palette.byName.cadetBlue,
+      borderColor: theme.palette.byName.frost,
       top: 0,
 
       '& legend': {

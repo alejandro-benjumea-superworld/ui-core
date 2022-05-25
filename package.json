@@ -1,6 +1,6 @@
 {
   "name": "ui-core-superworldapp-test",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Superworld components library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -98,10 +98,10 @@
     "npm": "^6.14.16"
   },
   "repository": "",
-  "lint-staged":{
-      "**/*.{js,jsx,ts,tsx}":[
-        "npx prettier --write",
-        "npx eslint --fix"
-      ]
-    }
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  }
 }

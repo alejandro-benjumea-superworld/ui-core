@@ -36,6 +36,6 @@ export const MuiButton: Components<Theme>['MuiButton'] = {
     }),
     root: {
       borderRadius: 0,
-    }
+    },
   },
 };

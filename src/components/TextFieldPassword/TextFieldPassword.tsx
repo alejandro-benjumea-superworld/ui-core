@@ -35,7 +35,7 @@ export const TextFieldPassword = forwardRef<
     setShowPassword(not);
   };
 
-  const iconTestId = `${testId}-icon-button2`;
+  const iconTestId = `${testId}-icon-button`;
   const helperTextTestId = `${testId}-helper-text`;
 
   return (

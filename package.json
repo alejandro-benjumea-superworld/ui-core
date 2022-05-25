@@ -100,8 +100,8 @@
   "repository": "",
   "lint-staged":{
       "**/*.{js,jsx,ts,tsx}":[
-        "npm run format:fix",
-        "npm run lint:fix"
+        "npx prettier --write",
+        "npx eslint --fix"
       ]
     }
 }

@@ -4,7 +4,7 @@ export const MuiInputLabel: Components<Theme>['MuiInputLabel'] = {
   styleOverrides: {
     root: ({ theme }) => ({
       alignItems: 'center',
-      color: theme.palette.byName.cadetBlue,
+      color: theme.palette.byName.frost,
       display: 'flex',
       fontSize: 14,
       height: 24,
@@ -14,7 +14,7 @@ export const MuiInputLabel: Components<Theme>['MuiInputLabel'] = {
       transform: 'none',
 
       '&.Mui-error': {
-        color: theme.palette.byName.cadetBlue,
+        color: theme.palette.byName.frost,
       },
     }),
   },

@@ -8,7 +8,7 @@ export const MuiInputBase: Components<Theme>['MuiInputBase'] = {
     input: ({ theme }) => ({
       backgroundColor: theme.palette.common.white,
       '&::placeholder': {
-        color: theme.palette.byName.deepSapphire,
+        color: theme.palette.byName.navy,
       },
     }),
   },

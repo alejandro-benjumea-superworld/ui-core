@@ -1,11 +1,12 @@
 {
-  "name": "alejandro/ui-core",
-  "version": "0.0.1",
-  "description": "Superworld components library",
+  "name": "@alejandro-benjumea-superworldapp/ui-core",
+  "version": "0.0.0",
+  "description": "Superworld core components library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
@@ -17,6 +18,8 @@
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint src --ext ts,tsx",
     "prebuild": "npm run clean",
+    "prepare": "husky install",
+    "release": "standard-version",
     "storybook:build": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "test:watch": "jest --watch",
@@ -75,8 +78,10 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-storybook": "^0.5.12",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
+    "lint-staged": "^12.4.2",
     "prettier": "^2.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -84,6 +89,7 @@
     "rollup": "^2.74.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
+    "standard-version": "^9.5.0",
     "ts-jest": "^28.0.3",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "tslib": "^2.4.0",
@@ -94,5 +100,21 @@
     "node": "^14.19.0",
     "npm": "^6.14.16"
   },
-  "repository": ""
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superworlddev/ui-core.git"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "mui",
+    "theme",
+    "ThemeProvider"
+  ]
 }

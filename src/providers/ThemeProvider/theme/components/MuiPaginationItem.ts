@@ -11,7 +11,7 @@ export const MuiPaginationItem: Components<Theme>['MuiPaginationItem'] = {
       },
 
       '&.Mui-selected': {
-        color: theme.palette.byName.persianBlue2,
+        color: theme.palette.byName.royalBlue,
         backgroundColor: 'transparent',
       },
 

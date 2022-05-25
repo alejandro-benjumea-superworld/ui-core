@@ -8,14 +8,6 @@ import pkg from './package.json';
 
 const production = !process.env.ROLLUP_WATCH;
 
-const exclude = [
-  'node_modules',
-  'dist',
-  'src/**/*.stories.tsx',
-  'src/**/*.stories.ts',
-  'src/**/*test.*',
-];
-
 const plugins = [
   peerDepsExternal(),
   resolve(),
@@ -24,7 +16,6 @@ const plugins = [
 ];
 
 export default [
-  // CommonJS
   {
     input: 'src/index.ts',
     output: {
@@ -35,21 +26,19 @@ export default [
     },
     external: [
       ...Object.keys(pkg.dependencies),
-      ...Object.keys(pkg.peerDependencies)
+      ...Object.keys(pkg.peerDependencies),
     ],
     plugins: [
-      ...plugins,
       typescript({
+        tsconfig: './tsconfig.build.json',
         declaration: true,
         declarationDir: './dist',
-        exclude,
         rootDir: 'src/',
         sourceMap: !production,
       }),
+      ...plugins,
     ],
   },
-  
-  // ES
   {
     input: 'src/index.ts',
     output: {
@@ -58,12 +47,18 @@ export default [
       sourcemap: !production,
     },
     plugins: [
-      ...plugins,
       typescript({
-        exclude,
+        tsconfig: './tsconfig.build.json',
         sourceMap: !production,
         inlineSources: !production,
       }),
+      ...plugins,
     ],
+    onwarn: function (warning) {
+      if (warning.code === 'THIS_IS_UNDEFINED') {
+        return;
+      }
+      console.warn(warning.message);
+    },
   },
 ];

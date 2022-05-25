@@ -1,0 +1,25 @@
+name: Checks
+on:
+  pull_request:
+    types: 
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - "**"
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm install
+      - name: Lint
+        run: npm run lint
+      - name: Tests
+        run: npm run test
+      - name: Build
+        run: npm run build

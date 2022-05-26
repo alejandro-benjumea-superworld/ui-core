@@ -13,8 +13,6 @@ jobs:
         with:
           node-version: 14
       - run: npm install
-      - name: Prettier
-        run: npm run format
       - name: Lint
         run: npm run lint
       - name: Tests

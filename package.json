@@ -18,6 +18,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint src --ext ts,tsx",
     "prebuild": "npm run clean",
+    "prepare": "husky install",
     "storybook:build": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "test:watch": "jest --watch",

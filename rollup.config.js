@@ -26,10 +26,9 @@ export default [
     },
     external: [
       ...Object.keys(pkg.dependencies),
-      ...Object.keys(pkg.peerDependencies)
+      ...Object.keys(pkg.peerDependencies),
     ],
     plugins: [
-      ...plugins,
       typescript({
         tsconfig: './tsconfig.build.json',
         declaration: true,
@@ -37,6 +36,7 @@ export default [
         rootDir: 'src/',
         sourceMap: !production,
       }),
+      ...plugins,
     ],
   },
   {
@@ -47,12 +47,18 @@ export default [
       sourcemap: !production,
     },
     plugins: [
-      ...plugins,
       typescript({
         tsconfig: './tsconfig.build.json',
         sourceMap: !production,
         inlineSources: !production,
       }),
+      ...plugins,
     ],
+    onwarn: function (warning) {
+      if (warning.code === 'THIS_IS_UNDEFINED') {
+        return;
+      }
+      console.warn(warning.message);
+    },
   },
 ];

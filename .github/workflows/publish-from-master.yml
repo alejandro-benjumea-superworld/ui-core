@@ -1,16 +1,19 @@
-name: Release
+name: Publish from master
 
 on: 
-  pull_request:
-    branches: 
+  push:
+    branches:
       - master
-    types: 
-      - closed
+  # pull_request:
+  #   branches: 
+  #     - master
+  #   types: 
+  #     - closed
 
 jobs:
-  release:
-    name: Release
-    if: github.event.pull_request.merged == true
+  publish:
+    name: Publish
+    # if: ${{ github.event.pull_request.merged == true }}
     runs-on: ubuntu-latest
 
     steps:

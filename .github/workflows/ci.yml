@@ -21,5 +21,7 @@ jobs:
         run: npm run lint
       - name: Tests
         run: npm run test
-      - name: Build
+      - name: Build Storybook
+        run: npm run storybook:build
+      - name: Build Library
         run: npm run build

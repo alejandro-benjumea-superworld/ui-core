@@ -1,10 +1,12 @@
-name: Publish
-on:
-  release:
-    types: [published]
+name: PRs to master
+on: 
+  pull_request:
+    branches: [master]
+    types: [closed]
 jobs:
   publish:
     name: npm publish
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,6 +17,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run test
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - run: npm run release
+      # - run: npm publish --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

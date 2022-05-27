@@ -1,6 +1,6 @@
 {
   "name": "@alejandro-benjumea-superworldapp/ui-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Superworld core components library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

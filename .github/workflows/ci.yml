@@ -1,6 +1,10 @@
 name: Checks
 on:
   pull_request:
+    types: 
+      - opened
+      - synchronize
+      - reopened
     branches:
       - "**"
 jobs:
@@ -13,8 +17,6 @@ jobs:
         with:
           node-version: 14
       - run: npm install
-      - name: Prettier
-        run: npm run format
       - name: Lint
         run: npm run lint
       - name: Tests

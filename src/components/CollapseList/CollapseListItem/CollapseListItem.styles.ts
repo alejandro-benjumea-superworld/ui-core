@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 export const useStyles = makeStyles({ name: 'collapse-list-item' })(
   (theme) => ({
     root: {
-      borderColor: theme.palette.byName.alto3,
+      borderColor: theme.palette.byName.lightGrey,
       borderStyle: 'solid',
       borderWidth: 1,
       listStyle: 'none',

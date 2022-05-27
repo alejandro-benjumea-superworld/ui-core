@@ -1,5 +1,5 @@
 {
-  "name": "ui-core-superworldapp-test",
+  "name": "@alejandro-benjumea-superworldapp/ui-core",
   "version": "0.1.1",
   "description": "Superworld components library",
   "main": "dist/index.js",

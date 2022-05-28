@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.1.1...v1.1.2) (2022-05-28)
+
+
+### Bug Fixes
+
+* **docs:** update readme ([cd162b4](https://github.com/alejandro-benjumea-superworld/ui-core/commit/cd162b4e60e7a57973b446fbc76b6622333583c9))
+
 ## [1.1.1](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.1.0...v1.1.1) (2022-05-28)
 
 

@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.0.5...v1.1.0) (2022-05-28)
+
+
+### Features
+
+* **ci:** test ci ([ea9d693](https://github.com/alejandro-benjumea-superworld/ui-core/commit/ea9d6933b119387cbd01b52d3d2c929f4d724d04))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

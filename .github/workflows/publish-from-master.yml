@@ -30,8 +30,7 @@ jobs:
         run: npm run build
       - name: Release
         env:
-          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB_TOKEN }}
-          GIT_CREDENTIALS: alejandro-benjumea-superworld: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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_CONFIG_REGISTRY: https://registry.npmjs.org:8443/
           CI: true

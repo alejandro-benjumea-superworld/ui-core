@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.1.0...v1.1.1) (2022-05-28)
+
+
+### Bug Fixes
+
+* **ci:** remove dist folder ([3b24f75](https://github.com/alejandro-benjumea-superworld/ui-core/commit/3b24f75272b227b82be29e3eb0fcde08e679e26b))
+* **release:** fix config release options ([7e70c05](https://github.com/alejandro-benjumea-superworld/ui-core/commit/7e70c0563f02c97431dce876f96571e5bab46d65))
+
 # [1.1.0](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.0.5...v1.1.0) (2022-05-28)
 
 

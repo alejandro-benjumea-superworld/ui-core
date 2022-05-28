@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/semantic-release/semantic-release">
+    <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-react-e10079?logo=semantic-release">
+  </a>
+</p>
+
 ## UI Core
 
 This package hosts React components, hooks and core utils that can be used for creating custom design systems.

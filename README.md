@@ -1,6 +1,12 @@
-<p align="center">
+<p>
+  <a href="https://github.com/facebook/react/tree/v17.0.2" rel="noopener" target="_blank">
+    <img alt="React" src="https://img.shields.io/badge/react-v17-fff?logo=react">
+  </a>
+  <a href="https://mui.com/material-ui/getting-started/usage" rel="noopener" target="_blank">
+    <img alt="Material-UI" src="https://img.shields.io/badge/material--ui-v5-fff?logo=mui">
+  </a>
   <a href="https://github.com/semantic-release/semantic-release">
-    <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-react-e10079?logo=semantic-release">
+    <img alt="semantic-releaser" src="https://img.shields.io/badge/semantic--release-angular-fff?logo=semantic-release">
   </a>
 </p>
 
@@ -38,5 +44,4 @@ export const App: FC = () => (
     <Routes />
   </ThemeProvider>
 );
-
 ```

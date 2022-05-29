@@ -3,8 +3,8 @@ name: Checks
 on:
   pull_request:
     branches:
-      - "**"
-    types: 
+      - '**'
+    types:
       - opened
       - synchronize
       - reopened

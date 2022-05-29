@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.1.2...v2.0.0) (2022-05-29)
+
+
+### Features
+
+* **docs:** testing 2 ([54932ac](https://github.com/alejandro-benjumea-superworld/ui-core/commit/54932ac2b02f7c5f96043c37687962fa9c024280))
+
+
+### BREAKING CHANGES
+
+* **docs:** test ci
+
 ## [1.1.2](https://github.com/alejandro-benjumea-superworld/ui-core/compare/v1.1.1...v1.1.2) (2022-05-28)
 
 

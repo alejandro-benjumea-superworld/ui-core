@@ -26,11 +26,11 @@ jobs:
         run: npm install --save-dev @semantic-release/changelog @semantic-release/git
       - name: Test
         run: npm run test
-      - name: Build
+      - name: Build lib
         run: npm run build
       - name: Buil storybook
         run: npm run storybook:build
-      - name: Release
+      - name: Deploy npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
@@ -39,7 +39,9 @@ jobs:
           HUSKY: 0
         run: npx semantic-release
       - name: Deploy storybook
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.STORYBOOK_TOKEN }}
+        uses: crazy-max/ghaction-github-pages@v1
         with:
-          branch: gh-pages
-          folder: storybook-static
+          target_branch: gh-pages
+          build_dir: storybook-static

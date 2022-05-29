@@ -1,10 +1,10 @@
 name: Publish from master
 
-on: 
+on:
   pull_request:
-    branches: 
+    branches:
       - master
-    types: 
+    types:
       - closed
 
 jobs:
@@ -23,11 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git   
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
       - name: Test
         run: npm run test
       - name: Build
         run: npm run build
+      - name: Buil storybook
+        run: npm run storybook:build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -36,3 +38,8 @@ jobs:
           CI: true
           HUSKY: 0
         run: npx semantic-release
+      - name: Deploy storybook
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: storybook-static

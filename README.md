@@ -12,7 +12,7 @@
 
 ## UI Core
 
-This package hosts React components, hooks and core utils that can be used for creating custom design systems.
+This package hosts React [components](https://alejandro-benjumea-superworld.github.io/ui-core/), hooks and core utils that can be used for creating custom design systems.
 
 ## Install
 
